@@ -12,11 +12,23 @@ import UIKit
 class INIntentHandler: INExtension, INRidesharingDomainHandling {
     
     func handle(listRideOptions intent: INListRideOptionsIntent, completion: @escaping (INListRideOptionsIntentResponse) -> Void) {
-        <#code#>
+        
+        let result = INListRideOptionsIntentResponse(code: .success, userActivity: nil)
+        
+        let mini = INRideOption(name: "Mini Cooper", estimatedPickupDate: Date(timeIntervalSinceNow: 1000))
+        let accord = INRideOption(name: "Honda Accord", estimatedPickupDate: Date(timeIntervalSinceNow: 800))
+        let ferrari = INRideOption(name: "Ferrri F430", estimatedPickupDate: Date(timeIntervalSinceNow: 300))
+        ferrari.disclaimerMessage = "This is bad for the environment"
+        
+        result.expirationDate = Date(timeIntervalSinceNow: 3600)
+        result.rideOptions = [mini, accord, ferrari]
+        
+        completion(result)
     }
     
     func handle(requestRide intent: INRequestRideIntent, completion: @escaping (INRequestRideIntentResponse) -> Void) {
-        <#code#>
+        
+        
     }
     
     func handle(getRideStatus intent: INGetRideStatusIntent, completion: @escaping (INGetRideStatusIntentResponse) -> Void) {
@@ -26,19 +38,19 @@ class INIntentHandler: INExtension, INRidesharingDomainHandling {
     }
     
     func startSendingUpdates(forGetRideStatus intent: INGetRideStatusIntent, to observer: INGetRideStatusIntentResponseObserver) {
-        <#code#>
+        
     }
     
     func stopSendingUpdates(forGetRideStatus intent: INGetRideStatusIntent) {
-        <#code#>
+        
     }
     
     func resolvePickupLocation(forRequestRide intent: INRequestRideIntent, with completion: @escaping (INPlacemarkResolutionResult) -> Void) {
-        <#code#>
+        
     }
     
     func resolveDropOffLocation(forRequestRide intent: INRequestRideIntent, with completion: @escaping (INPlacemarkResolutionResult) -> Void) {
-        <#code#>
+        
     }
 }
 
