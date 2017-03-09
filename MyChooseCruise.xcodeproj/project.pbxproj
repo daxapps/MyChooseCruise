@@ -15,6 +15,9 @@
 		E02ACBE01E71724B001A6C4B /* MyChooseCruiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02ACBDF1E71724B001A6C4B /* MyChooseCruiseTests.swift */; };
 		E02ACBF11E71734B001A6C4B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02ACBF01E71734B001A6C4B /* IntentHandler.swift */; };
 		E02ACBF51E71734B001A6C4B /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E02ACBEE1E71734B001A6C4B /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E02ACBFD1E71811D001A6C4B /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = E02ACBFA1E71811D001A6C4B /* car.png */; };
+		E02ACBFE1E71811D001A6C4B /* car@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E02ACBFB1E71811D001A6C4B /* car@2x.png */; };
+		E02ACBFF1E71811D001A6C4B /* car@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E02ACBFC1E71811D001A6C4B /* car@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		E02ACBEE1E71734B001A6C4B /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02ACBF01E71734B001A6C4B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		E02ACBF21E71734B001A6C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02ACBFA1E71811D001A6C4B /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		E02ACBFB1E71811D001A6C4B /* car@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car@2x.png"; sourceTree = "<group>"; };
+		E02ACBFC1E71811D001A6C4B /* car@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 		E02ACBEF1E71734B001A6C4B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E02ACBFA1E71811D001A6C4B /* car.png */,
+				E02ACBFB1E71811D001A6C4B /* car@2x.png */,
+				E02ACBFC1E71811D001A6C4B /* car@3x.png */,
 				E02ACBF01E71734B001A6C4B /* IntentHandler.swift */,
 				E02ACBF21E71734B001A6C4B /* Info.plist */,
 			);
@@ -267,6 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02ACBFD1E71811D001A6C4B /* car.png in Resources */,
+				E02ACBFF1E71811D001A6C4B /* car@3x.png in Resources */,
+				E02ACBFE1E71811D001A6C4B /* car@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
