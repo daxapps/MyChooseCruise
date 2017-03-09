@@ -13,6 +13,8 @@
 		E02ACBD21E71724B001A6C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02ACBD11E71724B001A6C4B /* Assets.xcassets */; };
 		E02ACBD51E71724B001A6C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02ACBD31E71724B001A6C4B /* LaunchScreen.storyboard */; };
 		E02ACBE01E71724B001A6C4B /* MyChooseCruiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02ACBDF1E71724B001A6C4B /* MyChooseCruiseTests.swift */; };
+		E02ACBF11E71734B001A6C4B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02ACBF01E71734B001A6C4B /* IntentHandler.swift */; };
+		E02ACBF51E71734B001A6C4B /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E02ACBEE1E71734B001A6C4B /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = E02ACBC61E71724B001A6C4B;
 			remoteInfo = MyChooseCruise;
 		};
+		E02ACBF31E71734B001A6C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E02ACBBF1E71724B001A6C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02ACBED1E71734B001A6C4B;
+			remoteInfo = Extension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E02ACBF91E71734B001A6C4B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E02ACBF51E71734B001A6C4B /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E02ACBC71E71724B001A6C4B /* MyChooseCruise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChooseCruise.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +59,9 @@
 		E02ACBDB1E71724B001A6C4B /* MyChooseCruiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyChooseCruiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02ACBDF1E71724B001A6C4B /* MyChooseCruiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChooseCruiseTests.swift; sourceTree = "<group>"; };
 		E02ACBE11E71724B001A6C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02ACBEE1E71734B001A6C4B /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02ACBF01E71734B001A6C4B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E02ACBF21E71734B001A6C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02ACBEB1E71734B001A6C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			children = (
 				E02ACBC91E71724B001A6C4B /* MyChooseCruise */,
 				E02ACBDE1E71724B001A6C4B /* MyChooseCruiseTests */,
+				E02ACBEF1E71734B001A6C4B /* Extension */,
 				E02ACBC81E71724B001A6C4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			children = (
 				E02ACBC71E71724B001A6C4B /* MyChooseCruise.app */,
 				E02ACBDB1E71724B001A6C4B /* MyChooseCruiseTests.xctest */,
+				E02ACBEE1E71734B001A6C4B /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +131,15 @@
 			path = MyChooseCruiseTests;
 			sourceTree = "<group>";
 		};
+		E02ACBEF1E71734B001A6C4B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E02ACBF01E71734B001A6C4B /* IntentHandler.swift */,
+				E02ACBF21E71734B001A6C4B /* Info.plist */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +150,12 @@
 				E02ACBC31E71724B001A6C4B /* Sources */,
 				E02ACBC41E71724B001A6C4B /* Frameworks */,
 				E02ACBC51E71724B001A6C4B /* Resources */,
+				E02ACBF91E71734B001A6C4B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E02ACBF41E71734B001A6C4B /* PBXTargetDependency */,
 			);
 			name = MyChooseCruise;
 			productName = MyChooseCruise;
@@ -134,6 +180,23 @@
 			productReference = E02ACBDB1E71724B001A6C4B /* MyChooseCruiseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E02ACBED1E71734B001A6C4B /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02ACBF61E71734B001A6C4B /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				E02ACBEA1E71734B001A6C4B /* Sources */,
+				E02ACBEB1E71734B001A6C4B /* Frameworks */,
+				E02ACBEC1E71734B001A6C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = E02ACBEE1E71734B001A6C4B /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +218,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E02ACBC61E71724B001A6C4B;
 					};
+					E02ACBED1E71734B001A6C4B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EN498SV6Q8;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E02ACBC21E71724B001A6C4B /* Build configuration list for PBXProject "MyChooseCruise" */;
@@ -172,6 +240,7 @@
 			targets = (
 				E02ACBC61E71724B001A6C4B /* MyChooseCruise */,
 				E02ACBDA1E71724B001A6C4B /* MyChooseCruiseTests */,
+				E02ACBED1E71734B001A6C4B /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +257,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E02ACBD91E71724B001A6C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E02ACBEC1E71734B001A6C4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,6 +290,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02ACBEA1E71734B001A6C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02ACBF11E71734B001A6C4B /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,6 +305,11 @@
 			isa = PBXTargetDependency;
 			target = E02ACBC61E71724B001A6C4B /* MyChooseCruise */;
 			targetProxy = E02ACBDC1E71724B001A6C4B /* PBXContainerItemProxy */;
+		};
+		E02ACBF41E71734B001A6C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E02ACBED1E71734B001A6C4B /* Extension */;
+			targetProxy = E02ACBF31E71734B001A6C4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +427,7 @@
 		E02ACBE51E71724B001A6C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
 				INFOPLIST_FILE = MyChooseCruise/Info.plist;
@@ -351,6 +441,7 @@
 		E02ACBE61E71724B001A6C4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN498SV6Q8;
 				INFOPLIST_FILE = MyChooseCruise/Info.plist;
@@ -391,6 +482,32 @@
 			};
 			name = Release;
 		};
+		E02ACBF71E71734B001A6C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyChooseCruise.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E02ACBF81E71734B001A6C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EN498SV6Q8;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.daxapps.MyChooseCruise.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,6 +533,14 @@
 			buildConfigurations = (
 				E02ACBE81E71724B001A6C4B /* Debug */,
 				E02ACBE91E71724B001A6C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E02ACBF61E71734B001A6C4B /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02ACBF71E71734B001A6C4B /* Debug */,
+				E02ACBF81E71734B001A6C4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
